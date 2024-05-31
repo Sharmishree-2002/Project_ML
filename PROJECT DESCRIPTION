@@ -1,0 +1,67 @@
+#INTRODUCTION:
+The application domain of automatic video summarization is wide and includes (but is not limited to) the use of such technologies by media organizations (after integrating such techniques
+into their content management systems), to allow effective indexing, browsing, retrieval and promotion of their media assets; and video sharing platforms, to improve viewing experience
+enhance viewers engagement and increase content consumption. In addition, video summarization that is tailored to the requirements of particular content presentation scenarios can be used
+for e.g., generating trailers or teasers of movie s and episodes of a TV series; presenting the highlights of an event (e.g., a sports game, a music band performance, or a public debate);
+and creating a video synopsis with the main activities that took place over e.g., the last 24hrs of recordings of a surveillance camera, for time-efficient progress monitoring or security 
+purposes. Video summarization is to generate a short summary of the content of a longer video document byselecting and presenting the most informative or interesting materials for potential
+users. The output summary is usually composed of a set of keyframes, or video clips extracted from the original video with some editing process. The aim of video summarization is to speed up
+browsing of a large collection of videos data and achieve efficient access and representation of the video content. By watching the summary, users can make quick decisions on the usefulness
+of the video. Dependent on applications and target users, the evaluation of summary often involves usability studies to measure the content informativeness and quality of a summary.
+
+
+#PROCESS FLOW:
+
+1. PREPROCESSING :
+Preprocessing refers to the initial stage in data analysis or machine learning workflows where raw data is transformed, cleaned, and prepared for further processing or analysis.
+It involves a series of steps aimed at improving the quality and usability of the data. Preprocessing is essential because raw data often contains noise, inconsistencies, 
+missing values, or irrelevant information that can adversely affect the performance of machine learning models or the accuracy of data analysis.
+
+2. DEEP NEURAL FOR EXTRACTING FEATURE VECTOR :
+A deep neural network (DNN) is a type of artificial neural network (ANN) that consists of multiple layers of interconnected nodes or neurons. These networks are characterized by
+their depth, meaning they have many hidden layers between the input and output layers. Deep neural networksare capable of learning complex patterns and representations from data
+ making them suitable for tasks such as image recognition, natural language processing, and speech recognition.
+
+3. LSTM NETWORK :
+A Long Short-Term Memory (LSTM) network is a type of recurrent neural network (RNN) architecture that is well-suited for sequence modeling and time series prediction tasks.
+LSTM networks are designed to overcome the vanishing gradient problem, which can occur in traditional RNNs when training on long sequences of data.
+
+4. ACTON RECOGNITION:
+Action recognition in video summarization refers to the process of identifying and understanding human actions or activities depicted in a video, with the goal of generating a 
+concise summary of the video content. Video summarization aims to condense lengthy video sequences into shorter representations while preserving the most informative and important parts.
+
+5. ACTION RETRIEVAL :
+Action retrieval in video summarization refers to the process of searching for and retrieving video segments or clips that contain specific actions or activities of interest 
+from a large video dataset or collection. Unlike action recognition, which focuses on identifying actions within a single video, action retrieval involves searching across 
+multiple videos to find relevant segments that match a given query or description of an action.
+
+6. ACTION QUERY :
+An action query is a type of search query used in video retrieval systems to find specific video segments or clips that contain particular actions, activities, or behaviors. 
+Unlike text-based queries commonly used in web search engines, action queries are designed to retrieve videos based on the actions or movements depicted within them rather
+than textual descriptions or keywords.
+
+DATASET USED: KTH DATASET
+
+The KTH dataset consists of videos of humans performing 6 types of action: boxing, handclapping, handwaving, jogging, running, and walking. There are 25 subjects performing these
+actions in 4 scenarios: outdoor, outdoor with scale variation, outdoor with different clothes, and indoor. The total number of videos is therefore 25x4x6 = 600. The videos' frame 
+rate are 25fps and their resolution is 160x120. Each video sequence in the KTH Dataset contains one person performing one of the six actions mentioned above. The dataset provides 
+a valuable resource for researchers to develop and evaluate action recognition algorithms.
+                   The steps of preprocessing are as follows,
+                          1. Background Modeling
+                          2. Background Subtraction
+                          3. Foreground Modeling
+                          4. Human Body Rcognition
+CNN and RNN are used.The layers are of,
+1.Input Layer 
+2.Droupout Layer 
+3.Relu Layer 
+4.Softmax Layer 
+5.FullyConnected Layer
+
+TOOLS USED: MATLAB 2020a,Deep network designer
+
+REFERENCES:
+Xu Q et al (2014) Browsing and exploration of video sequences: A new scheme for key frame extraction and 3D visualization using entropy based Jensen divergence.
+Inform Sci 278:736–756
+
+
